@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Autopost2</string>
+
+    <!--共通使用-->
+    <string name="Twitter_icon">Twitter_icon</string>
+
+    <!--投稿画面-->
+    <string name="あ"></string>
+    <!--予約一覧画面-->
+
+    <!--投稿確認ダイアログ-->
+    <string name="Post_to">に投稿します。よろしいですか？</string>
+    <string name="Reservation_Post">予約投稿</string>
+    <string name="back">戻る</string>
+    <string name="う"></string>
+
+    <!--タグ付けダイアログ-->
+    <string name="Tagging_registration">#タグ付け登録</string>
+    <string name="No1">①</string>
+    <string name="No2">②</string>
+    <string name="Registration">登録</string>
+
+
+    <!--設定画面-->
+    <string name="Setting">設定</string>
+    <string name="Tutorial">チュートリアル</string>
+    <string name="Notification_Setting">通知設定</string>
+    <string name="Timezone">タイムゾーン</string>
+    <string name="Account_change">Twitterアカウント変更</string>
+    <string name="Help">ヘルプ</string>
+    <string name="Contact_Us">お問い合わせ</string>
+    <string name="Terms_service">利用規約</string>
+    <string name="Privacy_policy">プライバシーポリシー</string>
+    <string name="Display_CommercialCode">特商法に基づく表示</string>
+
+</resources>
