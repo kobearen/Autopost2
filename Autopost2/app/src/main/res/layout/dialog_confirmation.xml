@@ -8,7 +8,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
-            android:layout_marginTop="400dp"
+            android:layout_marginTop="40dp"
             android:layout_marginLeft="6dp"
             android:layout_marginRight="6dp"
             android:paddingBottom="20dp"
@@ -47,6 +47,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="6dp"
+                android:layout_marginRight="2dp"
                 android:background="@drawable/bt_dialog_positive"
                 android:text="@string/Reservation_Post"
                 android:textColor="@android:color/white"
@@ -56,10 +57,12 @@
                 android:id="@+id/back_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="6dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="90dp"
                 android:background="@drawable/bt_dialog_positive"
                 android:text="@string/back"
                 android:textColor="@android:color/white"
+                />
         />
 
     </LinearLayout>
@@ -74,6 +77,6 @@
             android:background="@drawable/bt_dialog_close"
             android:text="×"
             android:textColor="#9acd32"
-            android:layout_marginTop="400dp" android:layout_marginRight="3dp"/>
+            android:layout_marginTop="40dp" android:layout_marginRight="9dp"/>
 
 </RelativeLayout>
