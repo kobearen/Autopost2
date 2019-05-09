@@ -16,9 +16,10 @@
 
     <!--タグ付けダイアログ-->
     <string name="Tagging_registration">#タグ付け登録</string>
-    <string name="No1">①</string>
-    <string name="No2">②</string>
+    <string name="No1">①＃</string>
+    <string name="No2">②＃</string>
     <string name="Registration">登録</string>
+    <string name="delete">削除</string>
 
 
     <!--設定画面-->

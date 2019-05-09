@@ -22,12 +22,23 @@
             android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Next"
+            android:text="＃登録画面へ"
             android:textSize="18sp"
             app:layout_constraintTop_toBottomOf="@+id/textView"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"/>
+            app:layout_constraintHorizontal_bias="0.761"/>
+    <Button
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="予約投稿画面へ"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.226" app:layout_constraintVertical_bias="0.501"/>
 
 </android.support.constraint.ConstraintLayout>

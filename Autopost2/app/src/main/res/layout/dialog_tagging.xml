@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" >
+                android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <!-- コンテンツ -->
     <LinearLayout
@@ -14,7 +14,7 @@
             android:background="@drawable/bg_dialog"
             android:gravity="center_horizontal"
             android:orientation="vertical"
-    >
+            android:layout_marginTop="0dp">
 
         <!-- タイトル -->
         <TextView
@@ -77,7 +77,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="6dp"
                 android:background="@drawable/bt_dialog_positive"
-                android:text="@string/back"
+                android:text="@string/delete"
                 android:textColor="@android:color/white"
         />
 
@@ -95,5 +95,8 @@
             android:textColor="#9acd32"
             android:layout_marginTop="1dp"
             android:layout_marginRight="10dp"/>
+
+
+
 
 </RelativeLayout>
