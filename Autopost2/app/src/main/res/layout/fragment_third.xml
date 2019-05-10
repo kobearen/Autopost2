@@ -26,13 +26,28 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_alignParentRight="true"
-            android:text="Back to First Fragment"
+            android:text="予約投稿一覧へ"
+            android:background="@drawable/bt_dialog_positive"
             android:textSize="18sp"
             app:layout_constraintTop_toBottomOf="@+id/textView"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-    >
+            android:layout_marginTop="484dp">
+
+    </Button>
+    <Button
+            android:id="@+id/back_top_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="Top画面へ戻る"
+            android:background="@drawable/bt_dialog_positive"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="532dp">
 
     </Button>
 

@@ -1,102 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto">
+<android.support.constraint.ConstraintLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+android:layout_height="match_parent">
 
-    <!-- コンテンツ -->
-    <LinearLayout
+
+<!-- タイトル -->
+    <TextView
+            android:id="@+id/title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_marginLeft="6dp"
-            android:layout_marginRight="6dp"
-            android:paddingBottom="20dp"
-            android:background="@drawable/bg_dialog"
-            android:gravity="center_horizontal"
-            android:orientation="vertical"
-            android:layout_marginTop="0dp">
+            android:background="@drawable/bg_dialog_title"
+            android:padding="10dp"
+            android:text="@string/Twitter_icon"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+    />
 
-        <!-- タイトル -->
-        <TextView
-                android:id="@+id/title"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/bg_dialog_title"
-                android:padding="10dp"
-                android:text="@string/Twitter_icon"
-                android:textSize="18sp"
-                android:textColor="@android:color/white"
-        />
+<!-- メッセージ -->
+    <TextView
+            android:id="@+id/Tagging_registration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:lineSpacingExtra="6dp"
+            android:text="@string/Tagging_registration"
+            android:textSize="36sp"
+            android:textColor="#333333"
+            tools:layout_editor_absoluteY="73dp" tools:layout_editor_absoluteX="87dp"/>
+    <TextView
+            android:id="@+id/No1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:lineSpacingExtra="6dp"
+            android:text="@string/No1"
+            android:textSize="36sp"
+            android:textColor="#333333"
+            tools:layout_editor_absoluteY="152dp" tools:layout_editor_absoluteX="58dp"/>
+    <TextView
+            android:id="@+id/No2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:lineSpacingExtra="6dp"
+            android:text="@string/No2"
+            android:textSize="36sp"
+            android:textColor="#333333"
+            tools:layout_editor_absoluteY="253dp" tools:layout_editor_absoluteX="58dp"/>
 
-        <!-- メッセージ -->
-        <TextView
-                android:id="@+id/Tagging_registration"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="20dp"
-                android:lineSpacingExtra="6dp"
-                android:text="@string/Tagging_registration"
-                android:textSize="36sp"
-                android:textColor="#333333"
-        />
-        <TextView
-                android:id="@+id/No1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="20dp"
-                android:lineSpacingExtra="6dp"
-                android:text="@string/No1"
-                android:textSize="36sp"
-                android:textColor="#333333"
-        />
-        <TextView
-                android:id="@+id/No2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="20dp"
-                android:lineSpacingExtra="6dp"
-                android:text="@string/No2"
-                android:textSize="36sp"
-                android:textColor="#333333"
-        />
-
-        <!-- OK ボタン -->
-        <Button
-                android:id="@+id/registration_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="6dp"
-                android:background="@drawable/bt_dialog_positive"
-                android:text="@string/Registration"
-                android:textColor="@android:color/white"
-        />
-        <!-- 戻る ボタン -->
-        <Button
-                android:id="@+id/back_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="6dp"
-                android:background="@drawable/bt_dialog_positive"
-                android:text="@string/delete"
-                android:textColor="@android:color/white"
-        />
-
-    </LinearLayout>
-
-    <!-- Close ボタン -->
+<!-- OK ボタン -->
     <Button
-            android:id="@+id/close_button"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentTop="true"
-            android:background="@drawable/bt_dialog_close"
-            android:text="×"
-            android:textColor="#9acd32"
-            android:layout_marginTop="1dp"
-            android:layout_marginRight="10dp"/>
+            android:id="@+id/registration_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bt_dialog_positive"
+            android:text="@string/Registration"
+            android:textColor="@android:color/white"
+            tools:layout_editor_absoluteY="469dp" tools:layout_editor_absoluteX="236dp"
+    />
+<!-- 戻る ボタン -->
+    <Button
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bt_dialog_positive"
+            android:text="@string/back"
+            android:textColor="@android:color/white"
+            tools:layout_editor_absoluteY="469dp" tools:layout_editor_absoluteX="79dp"
+    />
 
-
-
-
-</RelativeLayout>
+</android.support.constraint.ConstraintLayout>
