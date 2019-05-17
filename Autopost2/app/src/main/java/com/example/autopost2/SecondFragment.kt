@@ -14,7 +14,13 @@ class SecondFragment : Fragment() {
         view.button?.setOnClickListener {
             Navigation.findNavController(it).navigate(R.id.action_second_to_third)
         }
+        // 0517 新しくボタンから遷移する
+        // navigation_graph.xmlにもactionを追加する必要がある
+        view.back_button?.setOnClickListener {
+            Navigation.findNavController(it).navigate(R.id.action_second_to_first)
+        }
         return view
     }
+
 }
 
