@@ -19,7 +19,7 @@
             app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
-            android:id="@+id/button"
+            android:id="@+id/tag_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="＃登録画面へ"
@@ -40,5 +40,17 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.226" app:layout_constraintVertical_bias="0.501"/>
+
+    <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="設定画面へ"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@+id/back_button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+    />
 
 </android.support.constraint.ConstraintLayout>

@@ -32,7 +32,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="484dp">
+            android:layout_marginTop="456dp" app:layout_constraintHorizontal_bias="0.503">
 
     </Button>
     <Button
@@ -47,7 +47,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="532dp">
+            android:layout_marginTop="516dp" app:layout_constraintHorizontal_bias="0.501">
 
     </Button>
 

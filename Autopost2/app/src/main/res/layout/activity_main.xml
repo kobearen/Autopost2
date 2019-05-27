@@ -20,7 +20,8 @@
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="予約投稿するツイートを表示する!"
+            <!--android:text="ここはメイン画面-->
+           <!--　予約投稿するツイートを表示する!"-->
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"

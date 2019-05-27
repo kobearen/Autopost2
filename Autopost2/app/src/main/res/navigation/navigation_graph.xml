@@ -23,9 +23,14 @@
         <action
                 android:id="@+id/action_second_to_third"
                 app:destination="@id/thirdFragment" />
+        <!--// 0517 新しくボタンから遷移する-->
         <action
                 android:id="@+id/action_second_to_first"
                 app:destination="@id/firstFragment" />
+        <action
+                android:id="@+id/action_second_to_tag"
+                app:destination="@id/taggingDialog" />
+
     </fragment>
 
     <fragment
@@ -41,6 +46,15 @@
                 app:destination="@id/secondFragment" />
 
     </fragment>
+
+    <fragment
+            android:id="@+id/taggingDialog"
+            android:name="com.example.autopost2.TaggingDialogFragment"
+            android:label="tagging_dialog"
+            tools:layout="@layout/dialog_tagging">
+
+    </fragment>
+
 
 
 </navigation>
