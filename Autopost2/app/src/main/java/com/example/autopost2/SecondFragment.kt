@@ -26,6 +26,7 @@ class SecondFragment : Fragment() {
         view.tag_button?.setOnClickListener {
             Navigation.findNavController(it).navigate(R.id.action_second_to_tag)
         }
+
         // 仮ボタン
         view.button?.setOnClickListener {
             Navigation.findNavController(it).navigate(R.id.action_second_to_third)
@@ -35,7 +36,10 @@ class SecondFragment : Fragment() {
 
 }
 
-//
+/////
+//TaggingDialogFragmentに書くと思っている0529の頃の木村
+/////
+
 //// OK ボタンのリスナ
 //dialog.findViewById(R.id.registration_button).setOnClickListener(new View.OnClickListener() {
 //    @Override
