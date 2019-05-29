@@ -21,20 +21,20 @@ public class TaggingDialogFragment extends DialogFragment {
         // 背景を透明にする
         dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         // OK ボタンのリスナ
-        dialog.findViewById(R.id.positive_button).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                dismiss();
-            }
-        });
-        // Close ボタンのリスナ
-        dialog.findViewById(R.id.close_button).setOnClickListener(new View.OnClickListener() {
+        dialog.findViewById(R.id.registration_button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 dismiss();
             }
         });
 
+        // Close ボタンのリスナ
+        dialog.findViewById(R.id.back_button).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dismiss();
+            }
+        });
         return dialog;
     }
 
