@@ -21,7 +21,8 @@ class SecondFragment : Fragment() {
         }
 
         // ＃登録ダイアログを表示させる
-        // 0526 フラグメントと同じ感じでやってみる
+        // 0526 フラグメントと同じ感じでやってみるが
+        // YUKAさんに質問！！
         view.tag_button?.setOnClickListener {
             Navigation.findNavController(it).navigate(R.id.action_second_to_tag)
         }
@@ -33,3 +34,20 @@ class SecondFragment : Fragment() {
     }
 
 }
+
+//
+//// OK ボタンのリスナ
+//dialog.findViewById(R.id.registration_button).setOnClickListener(new View.OnClickListener() {
+//    @Override
+//    public void onClick(View v) {
+//        dismiss();
+//    }
+//});
+//
+//// Close ボタンのリスナ
+//dialog.findViewById(R.id.back_button).setOnClickListener(new View.OnClickListener() {
+//    @Override
+//    public void onClick(View v) {
+//        dismiss();
+//    }
+//});
