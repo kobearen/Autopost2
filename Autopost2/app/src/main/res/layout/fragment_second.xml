@@ -14,7 +14,7 @@
             android:text="予約投稿一覧"
             android:textSize="32sp"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toTopOf="@+id/button"
+            app:layout_constraintBottom_toTopOf="@+id/setteingbutton"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 
@@ -42,7 +42,7 @@
             app:layout_constraintHorizontal_bias="0.226" app:layout_constraintVertical_bias="0.501"/>
 
     <Button
-            android:id="@+id/button"
+            android:id="@+id/setteingbutton"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:text="設定画面へ"

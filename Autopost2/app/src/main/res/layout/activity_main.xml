@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:background="#dfe"
-        android:gravity="center_horizontal"
-        tools:context=".MainActivity">
+
 
 <android.support.constraint.ConstraintLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
@@ -47,30 +39,40 @@
             app:defaultNavHost="true"
             tools:layout_editor_absoluteY="0dp"
             tools:layout_editor_absoluteX="0dp"/>
-
+    <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            tools:context=".MainActivity" tools:layout_editor_absoluteY="0dp" tools:layout_editor_absoluteX="0dp">
         <TextView
                 android:id="@+id/text_view"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="30sp"
                 android:layout_margin="20dp"
-                android:gravity="center" />
+                android:gravity="center"
+                tools:layout_editor_absoluteY="143dp"
+                tools:layout_editor_absoluteX="20dp"/>
 
-    <EditText
-            android:id="@+id/edit_text"
-            android:hint="hint"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-            android:background="#ffffff"
-            android:gravity="center" tools:layout_editor_absoluteY="324dp" tools:layout_editor_absoluteX="24dp"/>
+        <EditText
+                android:id="@+id/edit_text"
+                android:hint="hint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="#ffffff"
+                android:gravity="center"
+                tools:layout_editor_absoluteY="324dp"
+                tools:layout_editor_absoluteX="24dp"/>
 
-    <Button
-            android:id="@+id/button"
-            android:text="button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" tools:layout_editor_absoluteY="393dp"
-            tools:layout_editor_absoluteX="161dp"/>
-
+        <Button
+                android:id="@+id/button"
+                android:text="button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" tools:layout_editor_absoluteY="393dp"
+                tools:layout_editor_absoluteX="161dp"/>
+    </LinearLayout>
 </android.support.constraint.ConstraintLayout>
-        </LinearLayout >

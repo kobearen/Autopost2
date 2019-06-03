@@ -18,13 +18,14 @@ class SecondFragment : Fragment() {
             Navigation.findNavController(it).navigate(R.id.action_second_to_first)
         }
 
-        // ＃登録ダイアログを表示させる
-        view.tag_button?.setOnClickListener {
-            Navigation.findNavController(it).navigate(R.id.action_second_to_tag)
+        // 0601 ＃登録ダイアログを表示させる
+        // Navigationではダメ！絶対
+        view.tag_button?.setOnClickListener {val test = TaggingDialogFragment()
+            test.show(fragmentManager, "test")
         }
 
         // 仮ボタン
-        view.button?.setOnClickListener {
+        view.setteingbutton?.setOnClickListener {
             Navigation.findNavController(it).navigate(R.id.action_second_to_third)
         }
         return view

@@ -7,70 +7,136 @@ android:layout_width="match_parent"
 android:layout_height="match_parent"
 tools:context="TaggingDialogFragment">
 
-
-<!-- タイトル -->
+    <!-- タイトル -->
     <TextView
+            android:text="@string/Twitter_icon"
             android:id="@+id/title"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
             android:background="@drawable/bg_dialog_title"
             android:padding="10dp"
-            android:text="@string/Twitter_icon"
             android:textSize="18sp"
             android:textColor="@android:color/white"
+            app:layout_constraintStart_toEndOf="@+id/icon"
+            android:layout_marginStart = "45dp"
     />
 
 <!-- メッセージ -->
+    <ImageView
+            android:id="@+id/icon"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+            android:id="@+id/title1"
+            android:layout_width="280dp"
+            android:layout_height="58dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/No1"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="152dp"
+            tools:text="Title"
+            android:layout_marginStart="8dp"
+            app:layout_constraintHorizontal_bias="1.0"
+/>
+
+    <TextView
+            android:id="@+id/title2"
+            android:layout_width="280dp"
+            android:layout_height="58dp"
+            tools:text="Title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/No2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title1"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintVertical_bias="0.070"/>
+
+
     <TextView
             android:id="@+id/Tagging_registration"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
-            android:lineSpacingExtra="6dp"
-            android:text="@string/Tagging_registration"
             android:textSize="36sp"
             android:textColor="#333333"
-            tools:layout_editor_absoluteY="73dp" tools:layout_editor_absoluteX="87dp"/>
+            android:lineSpacingExtra="6dp"
+            android:text="@string/Tagging_registration"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.079"/>
+
+
     <TextView
             android:id="@+id/No1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-            android:lineSpacingExtra="6dp"
             android:text="@string/No1"
             android:textSize="36sp"
             android:textColor="#333333"
-            tools:layout_editor_absoluteY="152dp" tools:layout_editor_absoluteX="58dp"/>
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.222"/>
+
+/>
     <TextView
             android:id="@+id/No2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-            android:lineSpacingExtra="6dp"
             android:text="@string/No2"
             android:textSize="36sp"
             android:textColor="#333333"
-            tools:layout_editor_absoluteY="253dp" tools:layout_editor_absoluteX="58dp"/>
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/No1"
+            app:layout_constraintVertical_bias="0.35"/>
+    <!--lineSpacingExtra=TextViewの行間の調整する-->
 
+    <!-- 戻る ボタン -->
+    <Button
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/registration_button"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.5"
+            android:background="@drawable/bt_dialog_positive"
+            android:text="@string/back"
+            android:textColor="@android:color/white"
+            app:layout_constraintHorizontal_bias="0.3"
+            tools:layout_editor_absoluteX="70dp"
+
+    />
 <!-- OK ボタン -->
     <Button
             android:id="@+id/registration_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/back_button"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.5"
             android:background="@drawable/bt_dialog_positive"
             android:text="@string/Registration"
             android:textColor="@android:color/white"
-            tools:layout_editor_absoluteY="469dp" tools:layout_editor_absoluteX="236dp"
+            app:layout_constraintStart_toEndOf="@+id/back_button"
+            android:layout_marginLeft = "75dp"
+            tools:layout_editor_absoluteY="400dp"
+
     />
-<!-- 戻る ボタン -->
-    <Button
-            android:id="@+id/back_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/bt_dialog_positive"
-            android:text="@string/back"
-            android:textColor="@android:color/white"
-            tools:layout_editor_absoluteY="469dp" tools:layout_editor_absoluteX="79dp"
-    />
+
+
 
 </android.support.constraint.ConstraintLayout>
