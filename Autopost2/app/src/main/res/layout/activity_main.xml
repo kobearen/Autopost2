@@ -57,22 +57,6 @@
                 tools:layout_editor_absoluteY="143dp"
                 tools:layout_editor_absoluteX="20dp"/>
 
-        <EditText
-                android:id="@+id/edit_text"
-                android:hint="hint"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="20dp"
-                android:background="#ffffff"
-                android:gravity="center"
-                tools:layout_editor_absoluteY="324dp"
-                tools:layout_editor_absoluteX="24dp"/>
 
-        <Button
-                android:id="@+id/button"
-                android:text="button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" tools:layout_editor_absoluteY="393dp"
-                tools:layout_editor_absoluteX="161dp"/>
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
