@@ -54,13 +54,7 @@
             android:layout_height="58dp"
             tools:text="#登録1"
             android:background="@drawable/frame_border"
-            app:layout_constraintTop_toBottomOf="@+id/Tagging_registration"
-            app:layout_constraintBottom_toTopOf="@+id/tag2"
-            app:layout_constraintStart_toStartOf="@+id/tag2"
-            app:layout_constraintEnd_toEndOf="@+id/tag2"
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"
-            />
+            tools:layout_editor_absoluteY="138dp" tools:layout_editor_absoluteX="80dp"/>
 
     <TextView
             android:id="@+id/tag2"
