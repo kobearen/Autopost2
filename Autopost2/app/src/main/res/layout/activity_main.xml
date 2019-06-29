@@ -49,16 +49,6 @@
             tools:context=".MainActivity"
             tools:layout_editor_absoluteY="0dp"
             tools:layout_editor_absoluteX="0dp">
-        <TextView
-                android:id="@+id/text_view"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="30sp"
-                android:layout_margin="20dp"
-                android:gravity="center"
-                tools:layout_editor_absoluteY="143dp"
-                tools:layout_editor_absoluteX="20dp"/>
-
 
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
