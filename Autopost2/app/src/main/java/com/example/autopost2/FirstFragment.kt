@@ -36,7 +36,7 @@ class FirstFragment : Fragment() {
 
         //0720ここでエラー　どこかなおさんと
 
-
+//
         // Save file
 //         button_save.setOnClickListener(View.OnClickListener {
 //
