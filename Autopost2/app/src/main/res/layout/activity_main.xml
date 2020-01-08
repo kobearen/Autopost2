@@ -19,7 +19,7 @@
             android:textSize="18sp"
             android:textColor="@android:color/white"
             app:layout_constraintTop_toTopOf="parent"
-    />
+            />
 
 
     <fragment
@@ -63,20 +63,63 @@
                 android:layout_margin="20dp"
                 android:gravity="center"/>
 
-        <EditText
-                android:id="@+id/edit_text"
-                android:hint="hint"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="20dp"
-                android:background="#ffffff"
-                android:gravity="center"/>
-
-        <Button
-                android:id="@+id/postbutton"
-                android:text="postbutton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-
     </LinearLayout>
+
+
+    <EditText
+            android:id="@+id/EditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="140文字"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.1"  />
+
+    <Button
+            android:id="@+id/postButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="post"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5"  />
+
+    <TextView
+            android:id="@+id/memoryView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1つ目"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.7"  />
+
+    <TextView
+            android:id="@+id/memoryView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2つ目"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.9"  />
+
+
+    <Button
+            android:id="@+id/clearButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="clear"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5"
+            app:layout_constraintHorizontal_bias="0.9" />
 </android.support.constraint.ConstraintLayout>
