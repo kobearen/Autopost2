@@ -32,8 +32,6 @@
             tools:layout_editor_absoluteY="0dp"
             tools:layout_editor_absoluteX="0dp"/>
     <LinearLayout
-            xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:tools="http://schemas.android.com/tools"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
@@ -41,6 +39,7 @@
             tools:context=".MainActivity"
             tools:layout_editor_absoluteY="0dp"
             tools:layout_editor_absoluteX="0dp">
+
 
     </LinearLayout>
 
@@ -59,9 +58,9 @@
                 android:id="@+id/text_view"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="30sp"
                 android:layout_margin="20dp"
-                android:gravity="center"/>
+                android:gravity="center"
+                android:textSize="30sp" />
 
     </LinearLayout>
 
@@ -75,7 +74,7 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.1"  />
+            app:layout_constraintVertical_bias="0.2"  />
 
     <Button
             android:id="@+id/postButton"
@@ -122,4 +121,15 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.5"
             app:layout_constraintHorizontal_bias="0.9" />
+    <Button
+            android:id="@+id/fragButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GotoFirstFra"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.95"
+            app:layout_constraintHorizontal_bias="0.95"/>
 </android.support.constraint.ConstraintLayout>

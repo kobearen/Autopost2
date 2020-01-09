@@ -20,11 +20,13 @@ public class TaggingDialogFragment extends DialogFragment {
         dialog.setContentView(R.layout.dialog_tagging);
         // 背景を透明にする
         dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-        // OK ボタンのリスナ
-        dialog.findViewById(R.id.registration_button).setOnClickListener(new View.OnClickListener() {
+        // 登録 ボタン
+        dialog.findViewById(R.id.registrationButton).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                dismiss();
+                // もし空白でなければ保存する
+
+                // 空白の場合は空白ですする
             }
         });
 
@@ -36,9 +38,10 @@ public class TaggingDialogFragment extends DialogFragment {
             }
         });
         return dialog;
-    }
 
-}
+        }
+
+    }
 
 
 

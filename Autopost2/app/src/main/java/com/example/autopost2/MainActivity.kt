@@ -7,6 +7,7 @@ import kotlinx.android.synthetic.main.dialog_confirmation.*
 import kotlinx.android.synthetic.main.fragment_second.view.*
 import android.content.Intent
 import android.view.MenuItem
+import android.widget.Button
 import android.widget.Toast
 import com.twitter.sdk.android.core.TwitterCore
 import kotlinx.android.synthetic.main.fragment_first.*
@@ -55,6 +56,16 @@ class MainActivity : AppCompatActivity() {
             memoryView2.text = "memory2"
             memoryFlg = 0
         }
+
+
+        // 2020/01/09メインアクティﾋﾞからfirstフラグメントに行けるようにする！
+//        val button = findViewById<Button>(R.id.fragButton)
+//        button.setOnClickListener {
+//            val transaction = supportFragmentManager.beginTransaction()
+//            transaction.add(R.id.fragment_first, FirstFragment.createInstance())
+//            transaction.addToBackStack(null)
+//            transaction.commit()
+//        }
 
     }
     override fun onOptionsItemSelected(item: MenuItem?): Boolean {
