@@ -23,10 +23,10 @@ class FirstFragment : Fragment() {
             view.button?.setOnClickListener {
                 Navigation.findNavController(it).navigate(R.id.action_first_to_second)
 
-
             }
             return view
         }
+
 
     private val fileName = "testfile.txt"
     override fun onCreate(savedInstanceState: Bundle?) {

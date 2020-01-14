@@ -3,22 +3,23 @@ package com.example.autopost2
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.dialog_confirmation.*
-import kotlinx.android.synthetic.main.fragment_second.view.*
-import android.content.Intent
 import android.view.MenuItem
-import android.widget.Button
-import android.widget.Toast
-import com.twitter.sdk.android.core.TwitterCore
-import kotlinx.android.synthetic.main.fragment_first.*
+import androidx.navigation.Navigation
+
 
 class MainActivity : AppCompatActivity() {
 
     var memoryFlg: Int = 0
 
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+
+        // 2020/01/09メインアクティﾋﾞからfirstフラグメントに行けるようにする！
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         supportActionBar?.title = "post"
@@ -28,14 +29,14 @@ class MainActivity : AppCompatActivity() {
             if(memoryFlg == 0){
                 memoryView.text = EditText.text
                 EditText.text = null
-                memoryFlg = memoryFlg + 1
+                memoryFlg += 1
             }
             // 1だけ埋まっている時
             else if(memoryFlg == 1){
                 memoryView2.text = memoryView.text
                 memoryView.text = EditText.text
                 EditText.text = null
-                memoryFlg = memoryFlg + 1
+                memoryFlg += 1
             }
             // 全部埋まっている時
             else if(memoryFlg == 2){
@@ -58,14 +59,6 @@ class MainActivity : AppCompatActivity() {
         }
 
 
-        // 2020/01/09メインアクティﾋﾞからfirstフラグメントに行けるようにする！
-//        val button = findViewById<Button>(R.id.fragButton)
-//        button.setOnClickListener {
-//            val transaction = supportFragmentManager.beginTransaction()
-//            transaction.add(R.id.fragment_first, FirstFragment.createInstance())
-//            transaction.addToBackStack(null)
-//            transaction.commit()
-//        }
 
     }
     override fun onOptionsItemSelected(item: MenuItem?): Boolean {

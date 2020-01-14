@@ -35,4 +35,9 @@ dependencies {
 
     implementation 'com.twitter.sdk.android:twitter-core:3.1.1' // twitterAPI 追記 0611
 
+    implementation "android.arch.navigation:navigation-fragment:1.0.0"
+    implementation "android.arch.navigation:navigation-ui:1.0.0"
+    implementation "android.arch.navigation:navigation-fragment-ktx:1.0.0"
+    implementation "android.arch.navigation:navigation-ui-ktx:1.0.0"
+
 }
