@@ -11,13 +11,10 @@ class MainActivity : AppCompatActivity() {
 
     var memoryFlg: Int = 0
 
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
 
         // 2020/01/09メインアクティﾋﾞからfirstフラグメントに行けるようにする！
 
@@ -31,6 +28,7 @@ class MainActivity : AppCompatActivity() {
                 EditText.text = null
                 memoryFlg += 1
             }
+
             // 1だけ埋まっている時
             else if(memoryFlg == 1){
                 memoryView2.text = memoryView.text
@@ -38,6 +36,7 @@ class MainActivity : AppCompatActivity() {
                 EditText.text = null
                 memoryFlg += 1
             }
+
             // 全部埋まっている時
             else if(memoryFlg == 2){
                 // memoryView2 が消えますが良いですか？ダイアログ
@@ -58,7 +57,9 @@ class MainActivity : AppCompatActivity() {
             memoryFlg = 0
         }
 
-
+        fragButton.setOnClickListener {
+            setContentView(R.layout.fragment_first)
+        }
 
     }
     override fun onOptionsItemSelected(item: MenuItem?): Boolean {
@@ -69,6 +70,8 @@ class MainActivity : AppCompatActivity() {
         return true
     }
 }
+
+
 
 // Twitter ログイン画面
 //        if (TwitterCore.getInstance().getSessionManager().getActiveSession() == null) {

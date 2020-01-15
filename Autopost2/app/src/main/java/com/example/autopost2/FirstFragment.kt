@@ -28,39 +28,14 @@ class FirstFragment : Fragment() {
         }
 
 
-    private val fileName = "testfile.txt"
-    override fun onCreate(savedInstanceState: Bundle?) {
-
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.fragment_first)
-
-        //0720ここでエラー　どこかなおさんと
-
+//    private val fileName = "testfile.txt"
+//    override fun onCreate(savedInstanceState: Bundle?) {
 //
-        // Save file
-//         button_save.setOnClickListener(View.OnClickListener {
+//        super.onCreate(savedInstanceState)
+//        setContentView(R.layout.fragment_first)
 //
-//            // get string contents of EditText
-//            val contents = editText.text.toString()
 //
-//            if (!contents.isEmpty()) {
-//                saveFile(fileName, contents)
-//                textView.text =  getString(R.string.saved)
-//            } else {
-//                textView.text = getString(R.string.no_text)
-//            }
-//        })
-//
-//        // Read file
-//        button_read.setOnClickListener(View.OnClickListener {
-//            val str = readFiles(fileName)
-//            if (str != null) {
-//                textView.text = str
-//            } else {
-//                textView.text = getString(R.string.read_error)
-//            }
-//        })
-    }
+//    }
 
     private fun setContentView(fragment_first: Int) {
 
