@@ -1,73 +1,56 @@
 package com.example.autopost2
 
-import android.content.Context
 import android.os.Bundle
 import android.support.v4.app.Fragment
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.navigation.Navigation
-import android.support.v7.app.AppCompatActivity
-import android.util.Log
-import java.io.BufferedReader
-import java.io.File
-import kotlinx.android.synthetic.main.fragment_first.*
+import android.widget.Button
+import androidx.navigation.fragment.NavHostFragment.findNavController
 import kotlinx.android.synthetic.main.fragment_first.view.*
 
 
 class FirstFragment : Fragment() {
 
 
-        override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-            val view = inflater.inflate(R.layout.fragment_first, container, false)
-            view.button?.setOnClickListener {
-                Navigation.findNavController(it).navigate(R.id.action_first_to_second)
 
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+        val view = inflater.inflate(R.layout.fragment_first, container, false)
+
+//        view.toSecondButton.setOnClickListener {
+//        findNavController.navigate(R.id.action_first_to_second)
+
+
+            // onCreatedViewのなかでview.findViewByIdを利用
+            view.findViewById<Button>(R.id.button).setOnClickListener {
+                Log.d("TAG", "はいれーーーー！！！！！")
             }
-            return view
-        }
 
 
-//    private val fileName = "testfile.txt"
-//    override fun onCreate(savedInstanceState: Bundle?) {
-//
-//        super.onCreate(savedInstanceState)
-//        setContentView(R.layout.fragment_first)
-//
-//
-//    }
 
-    private fun setContentView(fragment_first: Int) {
 
+
+            //print("ボタン押したら入るはず")
+            Log.d("TAG", "ボタン押したら入るはず")
+
+        return view
     }
+}
 
 
-    private fun saveFile(file: String, str: String) {
-
-        activity!!.applicationContext.openFileOutput(file, Context.MODE_PRIVATE).use {
-            it.write(str.toByteArray())
-        }
-
-//        applicationContext.openFileOutput(file, Context.MODE_PRIVATE).use {
-//            it.write(str.toByteArray())
+//    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+//            super.onViewCreated(view, savedInstanceState)
+//            findViewById<Button>(R.id.toSecondButton).setOnClickListener {
+//                Log.d("TAG", "ボタン押したら入るはず")
+//
+//            }
 //        }
-        //File(applicationContext.filesDir, file).writer().use {
-        //    it.write(str)
-        //}
-    }
 
-    private fun readFiles(file: String): String? {
 
-        // to check whether file exists or not
-        val readFile = File(activity!!.applicationContext.filesDir, file)
 
-        if(!readFile.exists()){
-            Log.d("debug","No file exists")
-            return null
-        }
-        else{
-            return readFile.bufferedReader().use(BufferedReader::readText)
-        }
-    }
-    }
+
+
+
+
 

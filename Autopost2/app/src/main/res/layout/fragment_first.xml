@@ -68,4 +68,11 @@
             android:text="予約投稿する"
             android:textSize="18sp"
      />
+    <Button
+            android:id="@+id/toSecondButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2ndへ"
+            android:textSize="18sp"
+            />
         </LinearLayout>

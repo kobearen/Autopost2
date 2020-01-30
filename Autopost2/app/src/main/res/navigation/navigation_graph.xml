@@ -20,7 +20,7 @@
             android:name="com.example.autopost2.SecondFragment"
             android:label="fragment_second"
             tools:layout="@layout/fragment_second" >
-        <action
+        <actiongit
                 android:id="@+id/action_second_to_third"
                 app:destination="@id/thirdFragment" />
 
