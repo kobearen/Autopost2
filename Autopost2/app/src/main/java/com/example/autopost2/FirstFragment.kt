@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.navigation.fragment.NavHostFragment.findNavController
+import androidx.navigation.fragment.findNavController
 import kotlinx.android.synthetic.main.fragment_first.view.*
 
 
@@ -23,13 +24,10 @@ class FirstFragment : Fragment() {
 
 
             // onCreatedViewのなかでview.findViewByIdを利用
-            view.findViewById<Button>(R.id.button).setOnClickListener {
+            view.findViewById<Button>(R.id.yoyakubutton).setOnClickListener {
                 Log.d("TAG", "はいれーーーー！！！！！")
+                findNavController().navigate(R.id.action_first_to_second)
             }
-
-
-
-
 
             //print("ボタン押したら入るはず")
             Log.d("TAG", "ボタン押したら入るはず")
