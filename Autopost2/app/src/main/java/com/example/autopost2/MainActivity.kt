@@ -2,6 +2,7 @@ package com.example.autopost2
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
 import kotlinx.android.synthetic.main.activity_main.*
 import android.view.MenuItem
 import androidx.navigation.Navigation
@@ -59,6 +60,7 @@ class MainActivity : AppCompatActivity() {
 
         fragButton.setOnClickListener {
             setContentView(R.layout.fragment_first)
+            // setContentView お菓子以下も
         }
 
     }
@@ -69,18 +71,13 @@ class MainActivity : AppCompatActivity() {
         }
         return true
     }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        return super.onCreateOptionsMenu(menu)
+        menu?.add(0)
+        menu?.add(0)
+    }
+    
 }
 
 
-
-// Twitter ログイン画面
-//        if (TwitterCore.getInstance().getSessionManager().getActiveSession() == null) {
-//            val intent = Intent(this, LoginActivity::class.java)
-//            startActivity(intent)
-//        } else {
-//            val toast = Toast.makeText(this@MainActivity, "ログイン中", Toast.LENGTH_LONG)
-//            toast.show()
-//        }
-
-//    }
-//}
